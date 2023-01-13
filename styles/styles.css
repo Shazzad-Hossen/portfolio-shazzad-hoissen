@@ -1,18 +1,48 @@
 :root {
     --primary-color: coral;
-    
+    --secondary-color: #252526;
+
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 
 * {
     box-sizing: border-box;
     margin: 0 0;
 }
+
 body {
     width: 1250px;
     max-width: 100%;
     margin: 30px auto;
     font-family: 'Poppins', sans-serif;
+
+}
+
+.section-title {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 26px;
+    text-align: center;
+    padding-bottom: 50px;
+    color: var(--primary-color);
+
+}
+
+.section-subtitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--secondary-color);
+    padding-bottom: 50px;
+
 }
 
 /* Header */
@@ -22,19 +52,29 @@ body {
     align-items: center;
     padding: 10px;
 }
-.header-container > h1 > span {
+
+.title {
+    font-size: 40px;
+    font-family: 'Racing Sans One';
+    font-weight: 700;
+}
+
+.header-container>h1>span {
     color: var(--primary-color);
 }
+
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    
+
 }
+
 nav ul li {
     font-size: 24px;
 
 }
+
 section {
     margin: 200px 0;
 }
@@ -46,57 +86,78 @@ section {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    
+
 }
+
 .intro-container h1 {
     font-weight: 700;
-font-size: 58px;
-line-height: 70px;
+    font-size: 58px;
+    line-height: 70px;
 }
+
 .person {
     width: 400px;
 }
 
 video {
-   
+
     display: flex;
-    margin:  0 auto;
+    margin: 0 auto;
     width: 780px;
     align-items: center;
-   
 
-  
+
+
 }
+
 .video-frame {
-   
+
     display: flex;
     width: 800px;
     margin: 0 auto;
     position: relative;
     bottom: 460px;
-    filter: drop-shadow(0 2px 10px rgba(0,0,0,0.2));
+    filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.2));
     overflow: hidden;
     align-items: center;
-   
+
 }
+
+/* Tech Stack */
+
+.tech-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 40px;
+
+}
+
+.tech-container img {
+    margin: auto;
+    width: 90px;
+
+}
+
+
+
+
+
+
+.hide {
+    display: none;
+}
+
 
 /* Responsive  */
-@media only screen and (max-width: 576px) {
-    .header-container
-     {
-        flex-direction: column;
-     }
-     
-    
 
-}
-@media only screen and (max-width: 994px){
+
+@media only screen and (max-width: 994px) {
 
     .intro-container {
         flex-direction: column;
         overflow-x: hidden;
-        
-    
+
+
     }
 
     video {
@@ -105,9 +166,32 @@ video {
         bottom: 120px;
 
     }
+
     .video-frame {
         width: 600px;
-       
+
     }
-    
+
+    .tech-container {
+
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
 }
+
+@media only screen and (max-width: 576px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .tech-container {
+
+       grid-template-columns: repeat(2,1fr);
+
+    }
+
+
+
+}
+
