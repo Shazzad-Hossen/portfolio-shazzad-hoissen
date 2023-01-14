@@ -20,6 +20,10 @@ body {
     padding: 0 20px;
 
 }
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
 
 .section-title {
 
@@ -43,6 +47,22 @@ body {
     text-align: center;
     color: var(--secondary-color);
     padding-bottom: 50px;
+
+}
+
+.button-primary {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    margin: 80px auto;
 
 }
 
@@ -73,6 +93,13 @@ nav ul {
 
 nav ul li {
     font-size: 24px;
+
+}
+
+.header-container a:hover{
+    background-color: #FFE4E8;
+    padding: 10px;
+    border-radius: 5px;
 
 }
 
@@ -170,11 +197,11 @@ video {
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     align-items: center;
     justify-items: center;
-    
+
 }
 
 .projects {
@@ -183,11 +210,13 @@ video {
     border-radius: 20px;
     height: 600px;
 }
+
 .projects>img {
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
 .ptoject-body {
     padding: 10px;
     display: flex;
@@ -205,7 +234,7 @@ table {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 
@@ -213,12 +242,13 @@ table {
 
 .cource-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 
     justify-items: center;
-   
+
 }
+
 .cources {
     display: flex;
     flex-direction: column;
@@ -228,11 +258,12 @@ table {
     border-radius: 5px;
     max-width: 250px;
 }
+
 .cources img {
     height: 104px;
     width: 224px;
     align-self: center;
-    
+
 }
 
 .cources h5 {
@@ -247,26 +278,32 @@ table {
 }
 
 
-.c-footer, .c-footer-1 {
+.c-footer,
+.c-footer-1 {
     display: flex;
     align-items: center;
 }
+
 .c-footer {
     justify-content: space-between;
 }
+
 .c-footer-1 img {
     width: 12.39px;
     height: 11.81px;
 }
+
 #star-last {
     color: #AEAEAE;
     opacity: 0.25;
 }
+
 .c-footer-1 h5 {
-    margin-left:10.71px;
+    margin-left: 10.71px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
 .time {
     display: flex;
     align-items: center;
@@ -291,23 +328,26 @@ table {
     font-weight: 600;
     font-size: 28px;
     line-height: 26px;
-    text-align: left;
+    text-align: center;
     padding: 50px;
     color: var(--primary-color);
 
 }
+
 .skill-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 0 60px;
     justify-items: center;
 }
+
 .skill {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
+
 .skill-title {
     font-family: 'Poppins';
     font-style: normal;
@@ -320,22 +360,73 @@ table {
 
 
 }
+
 progress[value] {
     -webkit-appearance: none;
     appearance: none;
     width: 200px;
     height: 15px;
-  }
-  progress[value]::-webkit-progress-bar {
+}
+
+progress[value]::-webkit-progress-bar {
     background-color: #cccccc;
     border-radius: 4px;
-  }
-  progress[value]::-webkit-progress-value {
+}
+
+progress[value]::-webkit-progress-value {
     background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .2) 33%, rgba(0, 0, 0, .2) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)), -webkit-linear-gradient(left, #1000ff, #359900);
     border-radius: 4px;
     background-size: 20px 15px, 100% 100%, 100% 100%;
-  }
+}
 
+
+/* Education and Experiences */
+.edu-ex-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.edu-container,
+.edx-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+}
+
+.edu-ex-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    color: #474747;
+}
+
+.edx-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #757575;
+}
+
+.edx-details {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #757575;
+
+}
+
+
+/* Footer */
+footer {
+    background: #1E1E1E;
+    padding: 50px 0;
+}
 
 
 
@@ -368,22 +459,29 @@ progress[value] {
         grid-template-columns: repeat(4, 1fr);
 
     }
+
     .projects-container {
-        grid-template-columns: repeat(2,1fr);
-        
+        grid-template-columns: repeat(2, 1fr);
+
     }
+
     .cource-container {
-        
-        grid-template-columns: repeat(2,1fr);
-        
-       
+
+        grid-template-columns: repeat(2, 1fr);
+
+
     }
+
     .skill-container {
-        
-        grid-template-columns: repeat(2,1fr);
+
+        grid-template-columns: repeat(2, 1fr);
     }
-  
-    
+
+    .edu-ex-container {
+        flex-direction: column;
+    }
+
+
 
 }
 
@@ -399,23 +497,26 @@ progress[value] {
     }
 
     .projects-container {
-        grid-template-columns: repeat(1,1fr);
-        
+        grid-template-columns: repeat(1, 1fr);
+
     }
+
     .cource-container {
-        
-        grid-template-columns: repeat(1,1fr);
-        
-       
+
+        grid-template-columns: repeat(1, 1fr);
+
+
     }
+
     .skill-container {
-        
-        grid-template-columns: repeat(1,1fr);
+
+        grid-template-columns: repeat(1, 1fr);
     }
+
     .skillset-title {
         text-align: center;
     }
-     
+
 
 
 
