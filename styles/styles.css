@@ -266,9 +266,9 @@ table {
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
-    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+    box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
     padding: 13px 17.42px 16.01px 11px;
-    border-radius: 5px;
+    border-radius: 12px;
     max-width: 250px;
 }
 
@@ -434,12 +434,55 @@ progress[value]::-webkit-progress-value {
 
 }
 
+/* Publications */
+
+.pub-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.pub {
+    display: flex;
+    gap: 30px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
+}
+.pub-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+}
+.pub-title {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.pub-img {
+    width: 300px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 footer {
     background: #1E1E1E;
     padding: 50px 0;
 }
+
+
 
 
 
@@ -494,6 +537,17 @@ footer {
     .edu-ex-container {
         flex-direction: column;
     }
+    .pub {
+        
+        flex-direction: column;
+       
+    }
+    .pub-img {
+        width: 100%;
+        border-top-left-radius: 18px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 18px;
+    }
 
 
 
@@ -545,6 +599,7 @@ footer {
         top: 86px;
 
     }
+    
 
 
 
